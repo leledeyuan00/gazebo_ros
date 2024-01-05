@@ -26,7 +26,7 @@ namespace ros_gz_bridge
 RosGzBridge::RosGzBridge(const rclcpp::NodeOptions & options)
 : rclcpp::Node("ros_gz_bridge", options)
 {
-  gz_node_ = std::make_shared<ignition::transport::Node>();
+  gz_node_ = std::make_shared<gz::transport::Node>();
 
   this->declare_parameter<int>("subscription_heartbeat", 1000);
   this->declare_parameter<std::string>("config_file", "");
@@ -110,8 +110,8 @@ void RosGzBridge::add_bridge(const BridgeConfig & config)
       "Failed to create a bridge for topic [%s] with ROS2 type [%s] "
       "to topic [%s] with Gazebo Transport type [%s]",
       config.ros_topic_name.c_str(),
-      config.gz_topic_name.c_str(),
       config.ros_type_name.c_str(),
+      config.gz_topic_name.c_str(),
       config.gz_type_name.c_str());
   }
 }

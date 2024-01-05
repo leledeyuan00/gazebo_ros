@@ -2,6 +2,18 @@
 Changelog for package ros_gz_sim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.244.12 (2023-12-13)
+---------------------
+* Add support for Harmonic/Humble pairing (`#462 <https://github.com/gazebosim/ros_gz/issues/462>`_)
+* Set on_exit_shutdown argument for gz-sim ExecuteProcess (`#355 <https://github.com/gazebosim/ros_gz/issues/355>`_) (`#451 <https://github.com/gazebosim/ros_gz/issues/451>`_)
+* Contributors: Addisu Z. Taddese, Michael Carroll
+
+0.244.11 (2023-05-23)
+---------------------
+
+0.244.10 (2023-05-03)
+---------------------
+
 0.244.9 (2022-11-03)
 --------------------
 * Export ROS Stopwatch library (`#299 <https://github.com/gazebosim/ros_gz/issues/299>`_) (`#322 <https://github.com/gazebosim/ros_gz/issues/322>`_)

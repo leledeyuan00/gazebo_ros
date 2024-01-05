@@ -2,6 +2,17 @@
 Changelog for package ros_ign_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.244.12 (2023-12-13)
+---------------------
+* Add support for Harmonic/Humble pairing (`#462 <https://github.com/gazebosim/ros_gz/issues/462>`_)
+* Contributors: Addisu Z. Taddese
+
+0.244.11 (2023-05-23)
+---------------------
+
+0.244.10 (2023-05-03)
+---------------------
+
 0.244.9 (2022-11-03)
 --------------------
 

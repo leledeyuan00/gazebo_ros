@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>ros_gz_sim</name>
-  <version>0.244.9</version>
+  <version>0.244.12</version>
   <description>Tools for using Gazebo Sim simulation with ROS.</description>
   <maintainer email="ahcorde@openrobotics.org">Alejandro Hernandez</maintainer>
 
@@ -18,6 +18,11 @@
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
 
+  <!-- Harmonic -->
+  <depend condition="$GZ_VERSION == harmonic">gz-math7</depend>
+  <depend condition="$GZ_VERSION == harmonic">gz-msgs10</depend>
+  <depend condition="$GZ_VERSION == harmonic">gz-sim8</depend>
+  <depend condition="$GZ_VERSION == harmonic">gz-transport13</depend>
   <!-- Garden -->
   <depend condition="$GZ_VERSION == garden or $IGNITION_VERSION == garden">gz-sim7</depend>
   <depend condition="$GZ_VERSION == garden or $IGNITION_VERSION == garden">gz-math7</depend>
